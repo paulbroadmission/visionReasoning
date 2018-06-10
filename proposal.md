@@ -147,16 +147,16 @@ So far we have posture recognition data along with time stamps. Suggest that we 
 
 ## Reference
 
-[1] Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh, "Realtime Multi-person 2D Pose Estimation Using Part Affinity Fields", in Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, USA, pp. 1302-1310, Jul. 21-26, 2017
+[1: Cao et al. 2017] Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh, "Realtime Multi-person 2D Pose Estimation Using Part Affinity Fields", in Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, USA, pp. 1302-1310, Jul. 21-26, 2017
 
-[2] Jacob Walker, Kenneth Marino, Abhinav Gupta, and Martial Hebert, "The Pose Knows: Video Forecasting by Generating Pose Futures", in Proceedings of IEEE International Conference on Computer Vision (ICCV), Venice, Italy, pp. 3352-3361, Oct. 22-29, 2017
+[2: Walker et al. 2017] Jacob Walker, Kenneth Marino, Abhinav Gupta, and Martial Hebert, "The Pose Knows: Video Forecasting by Generating Pose Futures", in Proceedings of IEEE International Conference on Computer Vision (ICCV), Venice, Italy, pp. 3352-3361, Oct. 22-29, 2017
 
-[3] Nitish Srivastava, Elman Mansimov, and Ruslan Salakhutdinov, "Unsupervised learning of video representations using LSTMs", in Proceedings of the 32nd International Conference on International Conference on Machine Learning, Lille, France, Vol. 37, pp. 843-852, Jul. 06-11, 2015 
+[3: Srivastava et al. 2015] Nitish Srivastava, Elman Mansimov, and Ruslan Salakhutdinov, "Unsupervised learning of video representations using LSTMs", in Proceedings of the 32nd International Conference on International Conference on Machine Learning, Lille, France, Vol. 37, pp. 843-852, Jul. 06-11, 2015 
 
-[4] Shuiwang Ji, Wei Xu, Ming Yang, and Kai Yu, "3D Convolutional Neural Networks for Human Action Recognition", IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 35, No. 1, pp. 221-231, Jan. 2013
+[4: Ji et al. 2013] Shuiwang Ji, Wei Xu, Ming Yang, and Kai Yu, "3D Convolutional Neural Networks for Human Action Recognition", IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 35, No. 1, pp. 221-231, Jan. 2013
 
-[5] Hanling Zhang, Ping Zhong, Jiale He, and Chenxing Xia, "Combining depth-skeleton feature with sparse coding for action recognition", Neurocomputing, Vol. 230, , pp. 417-426, Mar. 2017
+[5: Zhang et al. 2017] Hanling Zhang, Ping Zhong, Jiale He, and Chenxing Xia, "Combining depth-skeleton feature with sparse coding for action recognition", Neurocomputing, Vol. 230, , pp. 417-426, Mar. 2017
 
-[6] Irina Mocanu, Bogdan Cramariuc, Oana Balan, and Alin Moldoveanu, "A Framework for Activity Recognition Through Deep Learning and Abnormality Detection in Daily Activities", in Proceedings of Image Analysis and Processing (ICIAP), Catania, Italy, pp. 730-740, Sep. 11-15, 2017
+[6: Mocanu et al. 2017] Irina Mocanu, Bogdan Cramariuc, Oana Balan, and Alin Moldoveanu, "A Framework for Activity Recognition Through Deep Learning and Abnormality Detection in Daily Activities", in Proceedings of Image Analysis and Processing (ICIAP), Catania, Italy, pp. 730-740, Sep. 11-15, 2017
 
-[7] Koby Crammer and Yoram Singer, "On the algorithmic implementation of multiclass kernelbased vector machines.", Journal of Machine Learning Research, Journal of Machine Learning Research, Vol. 2, pp. 265-292, 2001
+[7: Crammer & Singer 2001] Koby Crammer and Yoram Singer, "On the algorithmic implementation of multiclass kernelbased vector machines.", Journal of Machine Learning Research, Journal of Machine Learning Research, Vol. 2, pp. 265-292, 2001
