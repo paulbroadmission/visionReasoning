@@ -12,11 +12,11 @@
   ![](https://ieeexplore.ieee.org/mediastore/IEEE/content/media/8097368/8099483/8099626/8099626-fig-2-small.gif)
   * Map 1: Part Confidence Maps
       
-      \(S=(S_1, S_2, ..., S_J)\), body part locations
+      $S=(S_1, S_2, ..., S_J)$, body part locations
       
   * Map 2: Part Affinity Fields
   
-      \(L=(L_1, L_2, ..., L_C)\)set of 2D vector fields L of part affinities, which encode the degree of association between parts. Each "limb"(part pairs besides face) has C vector fields.
+      $L=(L_1, L_2, ..., L_C)$set of 2D vector fields L of part affinities, which encode the degree of association between parts. Each "limb"(part pairs besides face) has C vector fields.
 
 ### Recogition
   * Produce Feature Map
@@ -28,13 +28,13 @@
  
   ![](http://7xsbsy.com1.z0.glb.clouddn.com/PAF_3.png)
 
-  First stage, network produces a set of detection confidence maps \(S^1=ρ^1(F)\) and a set of part affinity fields \(L^1=ϕ^1(F)\), \(ρ^1\) and \(ϕ^1\) are the CNNs for inference at Stage 1. 
+  First stage, network produces a set of detection confidence maps $S^1=ρ^1(F)$ and a set of part affinity fields $L^1=ϕ^1(F)$, $ρ^1$ and $ϕ^1$ are the CNNs for inference at Stage 1. 
   
   In each subsequent stage,  concatenated previous predictions and used to produce refined predictions.
   
   \begin{align*} &\mathbf{S}^{t} = \rho^{t}(\mathbf{F}, \mathbf{S}^{t-1}, \mathbf{L}^{t-1}), \forall t\geq 2, \tag{1}\\ &\mathbf{L}^{t} = \phi^{t}(\mathbf{F}, \mathbf{S}^{t-1}, \mathbf{L}^{t-1}), \forall t\geq 2, \tag{2} \end{align*}
   
-  \(ρ^t\)  and \(ϕ^t\) are the CNNs for inference at Stage t
+  $ρ^t$  and $ϕ^t$ are the CNNs for inference at Stage t
   
 ### Part Association
 
@@ -47,7 +47,7 @@
 
   * Vector Algorithm for Affinity
   
-     Let \(x_{j_1, k}, x_{j_2, k}\) be be groundtruth positions of body parts \(j_1\) and \(j_2\) from the limb c for person k in the image.
+     Let $x_{j_1, k}, x_{j_2, k}$ be be groundtruth positions of body parts $j_1$ and $j_2$ from the limb c for person k in the image.
      
      \begin{equation*} \mathbf{L}_{c, k}^{\ast}(\mathbf{p})=\begin{cases} \mathbf{v} &\text{if}\ \mathbf{p}\ \text{on limb}\ c, k\\ 0\ &\text{otherwise}. \end{cases} \tag{8} \end{equation*}
       ![](http://7xsbsy.com1.z0.glb.clouddn.com/PAF_chatu.png)
@@ -62,11 +62,11 @@
 
 ### Pipeline [[2](https://ieeexplore.ieee.org/document/8237623/)]
 
-* At time t, given a series of past poses \(P_{1...t}\) and and their corresponding velocities \(Y_{1…t}\) in input video \(X_t\)
+* At time t, given a series of past poses $P_{1...t}$ and and their corresponding velocities $Y_{1…t}$ in input video $X_t$
 
 * Encoder: Use LSTM to encode the past information sequence
 
-  Past Encoder takes  past information \(X_t,P_{1..t}\), and \(Y_{1..t}\) and encodes it in a hidden representation Ht
+  Past Encoder takes  past information $X_t,P_{1..t}$, and $Y_{1..t}$ and encodes it in a hidden representation Ht
   
 * Decoder
 
@@ -120,15 +120,15 @@ So far we have posture recognition data along with time stamps. Suggest that we 
 
 * Person Description 
 
-  We can have a Person description \(P_{i,t}=(p_{i,t}, loc_{i,t}, t)\), where \(i\) is person ID, \(t\) is timestamp, \(p\) is posture description, \(loc\) is location information for the person \(i\) in time \(t\) calculated from information of multple cameras (roof, for example).
+  We can have a Person description $P_{i,t}=(p_{i,t}, loc_{i,t}, t)$, where $i$ is person ID, $t$ is timestamp, $p$ is posture description, $loc$ is location information for the person $i$ in time $t$ calculated from information of multple cameras (roof, for example).
 
 * Team Description 
 
-   A Team contains one or more people description, \(T_t = (P_1, P_2, ..., P_N)\), for N people in a team at time t.
+   A Team contains one or more people description, $T_t = (P_1, P_2, ..., P_N)$, for N people in a team at time t.
    
 * Analysis
   
-  We can define a strategy \(S = (T_0, T_1, T_2, ... , T_t )\) during time 0 to time t.
+  We can define a strategy $S = (T_0, T_1, T_2, ... , T_t )$ during time 0 to time t.
   
   Let domain knowlege experts (like couch, trainer, physian) to label strategy by some videos. 
   
@@ -160,5 +160,3 @@ So far we have posture recognition data along with time stamps. Suggest that we 
 [6] Irina Mocanu, Bogdan Cramariuc, Oana Balan, and Alin Moldoveanu, "A Framework for Activity Recognition Through Deep Learning and Abnormality Detection in Daily Activities", in Proceedings of Image Analysis and Processing (ICIAP), Catania, Italy, pp. 730-740, Sep. 11-15, 2017
 
 [7] Koby Crammer and Yoram Singer, "On the algorithmic implementation of multiclass kernelbased vector machines.", Journal of Machine Learning Research, Journal of Machine Learning Research, Vol. 2, pp. 265-292, 2001
-
-
